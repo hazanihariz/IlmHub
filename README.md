@@ -304,3 +304,110 @@ npm run dev
 - Open your browser and go to:
 
 http://127.0.0.1:8000
+
+## Testing and Quality Assurance
+
+### Functionality Testing
+
+ - User registration and login system
+ - Role-based access for organizers and attendees
+ - Event creation, editing, and deletion (CRUD)
+ - Event browsing and category filtering
+ - Event booking and cancellation process
+ - Capacity checking to prevent overbooking
+ - Duplicate booking prevention
+ - Display of booking history in user dashboard
+ - Image upload and display for events
+ - Flash notifications for booking status
+ - Responsive design across devices
+
+### Browser Compatibility
+
+-  Google Chrome (Latest)
+-  Mozilla Firefox (Latest)
+-  Microsoft Edge (Latest)
+
+### Performance Testing
+
+- Page load times kept under 3 seconds
+- Optimized database queries using Eloquent relationships
+- Image files stored efficiently in the public folder
+- System tested on different screen sizes
+
+
+## Challenges Faced and Solutions
+### Challenge 1: Preventing Overbooking
+- Problem: Multiple users could attempt to book the same event at the same time, which may exceed the event’s capacity.
+- Solution: Implemented a capacity check in the BookingController that counts confirmed bookings before allowing a new booking. If the event is full, the system displays an error message.
+### Challenge 2: Duplicate Bookings
+- Problem: Users could book the same event multiple times, causing inaccurate booking records.
+- Solution: Added a validation check to ensure that a user cannot book the same event more than once unless their previous booking was cancelled.
+### Challenge 3: Role-Based Access Control
+- Problem: Only organizers should be allowed to create, edit, or delete events, while normal users should only be able to book events.
+- Solution: Used Laravel middleware and role validation to restrict access to event management features for administrators only.
+### Challenge 4: Secure User Authentication
+- Problem: User login and registration needed to be secure to protect personal data.
+- Solution: Implemented Laravel’s built-in authentication system with password hashing, input validation, and CSRF protection.
+### Challenge 5: Shariah-Compliant Event Filtering
+- Problem: Generic event platforms do not provide Islamic-specific filters such as gender policy and Shariah categories.
+- Solution: Added custom fields for gender policy and Islamic categories, ensuring that all events follow Shariah guidelines.
+
+## Future Enhancements
+### Phase 2 Features
+- Email & SMS reminders
+- Online payment integration
+- QR code attendance system
+- Advanced event filters
+- Mobile app version
+- Analytics dashboard
+
+### Scalability
+
+- Database optimization for larger datasets
+- Caching implementation for improved performance
+- API development for mobile app integration
+- Load balancing for high traffic scenarios
+
+
+## Learning Outcomes
+### Technical Skills Gained
+
+- Laravel Framework: Understanding MVC architecture and using Eloquent ORM for database operations
+- Database Design: Designing structured tables and relationships for efficient data management
+- Authentication: Implementing secure login, registration, and role-based access control
+- Frontend Development: Creating responsive interfaces using Blade templates and Bootstrap
+- Version Control: Managing project files using Git and GitHub
+
+### Soft Skills Developed
+
+- **Team Collaboration** : Working effectively with group members to complete tasks
+- **Project Management** : Planning and organizing development activities
+- **Problem Solving** : Identifying and fixing system errors during development
+- **Documentation** : Preparing clear and structured project reports
+
+## References
+
+1. Laravel Documentation. (2024). Laravel 10.x Documentation. Retrieved from https://laravel.com/docs/10.x
+2. Bootstrap Documentation. (2024). Bootstrap 5.3 Documentation. Retrieved from https://getbootstrap.com/docs/5.3/
+3. MySQL Documentation. (2024). MySQL 8.0 Reference Manual. Retrieved from https://dev.mysql.com/doc/refman/8.0/en/
+4. MDN Web Docs. (2024). Web Development Resources. Retrieved from https://developer.mozilla.org/
+5. Stack Overflow. (2024). Programming Q&A Platform. Retrieved from https://stackoverflow.com/
+
+## Conclusion
+IlmHub successfully demonstrates the development of a Shariah-compliant Islamic event management system using the Laravel framework. The project showcases strong implementation of MVC architecture, database design, authentication, and responsive UI design.
+
+### Key Achievements
+
+- Implemented Laravel MVC components (Routes, Controllers, Views, Models)
+- Built event creation & booking system
+- Applied secure authentication
+- Ensured Islamic compliance
+- Prevented overbooking
+- Designed user-friendly interface
+
+### Project Impact
+The IlmHub project allowed students to apply web development concepts in a real-world scenario using the Laravel framework. Students gained practical experience in backend and frontend development, database design, and authentication systems.
+Working in a group improved teamwork, communication, and time management skills. The project also helped students become more confident in using tools like GitHub, MySQL, and Laravel for professional web application development.
+
+- Project Completion Date: 16/1/2026
+- Course: INFO 3305 Web Application Development
