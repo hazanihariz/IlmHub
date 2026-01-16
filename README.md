@@ -14,7 +14,7 @@
 - MOHAMAD RAZIF ARMAN BIN RIZUWAN - 2311911 
 - MUHAMMAD HAZANI HARIZ BIN AZMAN - 2313199
 
-**Presentation Link**: https
+**Presentation Link**: https://youtu.be/MNSRi0fUgHw
 
 ## Project Overview
 
