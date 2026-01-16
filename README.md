@@ -189,7 +189,7 @@ class Booking extends Model {
     }
 }
 
-‘// Event Model’
+`// Event Model`
 class Event extends Model {
     public function category() {
         return $this->belongsTo(Category::class);
@@ -210,3 +210,37 @@ class Category extends Model {
         return $this->hasMany(Event::class);
     }
 }
+
+- Views and User Interface
+
+  *Blade Templates Structure:*
+  - layouts/app.blade.php - Main layout
+  - welcome.blade.php - Homepage
+  - events/show.blade.php - Event details
+  - events/create.blade.php - Create event
+  - events/edit.blade.php - Edit event
+  - events/my.blade.php - Organizer dashboard
+  - bookings/index.blade.php - My bookings
+  - auth/login.blade.php - Login
+  - auth/register.blade.php - Register
+
+   *UI Design Features:*
+   - Responsive Design: Bootstrap 5 for mobile-first approach
+   - Color Scheme: Islamic green & white color scheme
+   - Navigation: Simple navigation menu
+   - Interactive Elements: Event card layout for browsing, floating card and use of colours when hovers over the cards
+
+## User Authentication System
+
+### **Authentication Features**
+- **Registration System**: Secure user registration with email validation and password confirmation
+- **Login System**: Secure authentication using email and password with session management
+- **Password Reset**: Email-based password recovery system
+- **Role-Based Access**: Different access levels for Organizers (Admins) and Attendees, ensuring only organizers can manage events
+- **Profile Management**: Users can update their personal information after logging in
+
+### **Security Measures**
+- CSRF protection
+- Input validation
+- Middleware route protection
+- Secure session handling
