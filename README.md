@@ -5,6 +5,7 @@
 ## Group Information
 
 **Group Name**: G2
+
 **Section**: 5
 
 **Group Members** :
@@ -13,6 +14,7 @@
 - MOHAMAD RAZIF ARMAN BIN RIZUWAN - 2311911 
 - MUHAMMAD HAZANI HARIZ BIN AZMAN - 2313199
 
+**Presentation Link**: https
 
 ## Project Overview
 
@@ -244,3 +246,61 @@ class Category extends Model {
 - Input validation
 - Middleware route protection
 - Secure session handling
+
+## Installation and Setup Instructions
+### Prerequisites :
+Before running the IlmHub system, ensure the following software is installed:
+- PHP >= 8.1
+- Composer
+- Node.js and NPM
+- MySQL 8.0
+- XAMPP 
+
+### Step-by-Step Installation
+
+1. Clone the Repository
+
+git clone https://github.com/[your-username]/IlmHub.git
+
+cd IlmHub
+
+2. Install Dependencies
+
+composer install
+
+npm install
+
+3. Environment Configuration
+
+- Copy the example environment file and generate the app key:
+
+cp .env.example .env
+
+php artisan key:generate
+
+- Then open .env and configure your database:
+
+DB_DATABASE=ilmhub_db
+
+DB_USERNAME=root
+
+DB_PASSWORD=
+
+4. Database Setup
+
+- Create a new database named ilmhub_db in phpMyAdmin, then run:
+
+php artisan migrate
+
+php artisan db:seed
+
+5. Start Development Server
+
+php artisan serve
+npm run dev
+
+6. Access the Application
+
+- Open your browser and go to:
+
+http://127.0.0.1:8000
