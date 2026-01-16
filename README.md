@@ -297,6 +297,7 @@ php artisan db:seed
 5. Start Development Server
 
 php artisan serve
+
 npm run dev
 
 6. Access the Application
