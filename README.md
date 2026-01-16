@@ -4,7 +4,7 @@
 
 ## Group Information
 
-**Group Name**: G2
+**Group Name**: Clove
 
 **Section**: 5
 
