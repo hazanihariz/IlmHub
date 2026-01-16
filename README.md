@@ -260,7 +260,7 @@ Before running the IlmHub system, ensure the following software is installed:
 
 1. Clone the Repository
 
-git clone https://github.com/[your-username]/IlmHub.git
+git clone https://github.com/hazanihariz/IlmHub.git
 
 cd IlmHub
 
