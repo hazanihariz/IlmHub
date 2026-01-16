@@ -75,7 +75,7 @@ Unlike generic event platforms, IlmHub integrates Shariah-compliant features suc
 - Database: MySQL
 - Authentication: Laravel Auth
 - Image Storage: Laravel File Storage
-- Development Environment: XAMPP& VS Code
+- Development Environment: XAMPP & VS Code
 
 **Database Design**
 
